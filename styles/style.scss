@@ -33,10 +33,9 @@ img {
 /*============================
 #header.header
 ============================*/
-.header {
-  position: relative;
-
-}
+// .header {
+//   position: relative;
+// }
 
 @keyframes slideDown {
   from {
@@ -64,7 +63,6 @@ img {
 
 .header__wrapper {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
   max-width: 1367px;
   width: 100%;
@@ -419,7 +417,7 @@ body.is-fixed {
   text-align: center;
 }
 
-.service__imgAreaArea {
+.service__imgArea {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -583,7 +581,7 @@ body.is-fixed {
   }
 }
 
-.recuit__flex {
+.recruit__flex {
   display: flex;
 
   @include set.mediaQuery(tab) {
