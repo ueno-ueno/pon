@@ -1184,7 +1184,7 @@ body.is-fixed {
 }
 
 .hero {
-  background-image: url(/img/top/hero.jpg);
+  background-image: url(../img/top/hero.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -1449,7 +1449,7 @@ body.is-fixed {
 }
 
 .company__wrapper {
-  background-image: url(/img/company/bg_company.png);
+  background-image: url(../img/company/bg_company.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1459,7 +1459,7 @@ body.is-fixed {
 }
 @media screen and (max-width: 900px) {
   .company__wrapper {
-    background-image: url(/img/company/company-sp.jpg);
+    background-image: url(../img/company/company-sp.jpg);
   }
 }
 
