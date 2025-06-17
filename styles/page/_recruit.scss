@@ -4,7 +4,7 @@
 
 
 .indexRecruit {
-  background-image: url(/img/recruit/recruit-bg.jpg);
+  background-image: url(../img/recruit/recruit-bg.jpg);
   background-repeat: repeat;
   background-position: top center;
   padding-top: 90px;
@@ -41,8 +41,6 @@
   overflow: hidden;
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
-
-.indexRecruit__recruitInner {}
 
 .indexRecruit__hero {
   width: 100%;
@@ -116,9 +114,6 @@
   line-height: 3;
 }
 
-.indexRecruit__qualificationList {}
-
-.indexRecruit__qualificationItem {}
 
 .indexRecruit__movieArea {
   margin-bottom: 110px;

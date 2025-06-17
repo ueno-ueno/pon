@@ -2,26 +2,25 @@
 @use "../foundation/setting" as set;
 @use "../foundation/variables" as var;
 
-.indexWorks{
-margin-bottom: 110px;
+.indexWorks {
+  margin-bottom: 110px;
 }
 
-.indexWorks__list{
+.indexWorks__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-.indexWorks__item{
+.indexWorks__item {
   img {
     width: 100%;
     height: auto;
-    // aspect-ratio: 16/9;
     object-fit: cover;
     margin-bottom: 16px;
   }
 }
 
-.indexWorksWorks{
+.indexWorksWorks {
   text-align: center;
 }
