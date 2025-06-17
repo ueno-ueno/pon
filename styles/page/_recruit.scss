@@ -1,0 +1,125 @@
+@use "../component/component";
+@use "../foundation/setting" as set;
+@use "../foundation/variables" as var;
+
+
+.indexRecruit {
+  background-image: url(/img/recruit/recruit-bg.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  padding-top: 90px;
+}
+
+.indexRecruit__mainTitle {
+  font-size: clamp(4.8rem, 3.927rem + 4.36vw, 7.2rem);
+  font-weight: bold;
+  color: var.$primaryColorPurple;
+  display: block;
+}
+
+.indexRecruit__title {
+  text-align: center;
+}
+
+.indexRecruit__subTitle {
+  font-size: clamp(1.8rem, 1.291rem + 2.55vw, 3.2rem);
+  color: var.$primaryColorPurple;
+  text-align: center;
+}
+
+.indexRecruit__caption {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+.indexRecruit__heroArea {
+  margin-bottom: 70px;
+  position: relative;
+  width: 100%;
+  height: 840px;
+  overflow: hidden;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.indexRecruit__recruitInner {}
+
+.indexRecruit__hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+
+.indexRecruit__recruitTitle {
+  font-size: clamp(2.4rem, 2.109rem + 1.45vw, 3.2rem);
+  color: var.$primaryColorPurple;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.indexRecruit__contentArea {
+  background-color: var.$white;
+  padding: 60px 95px;
+  border-radius: 6px;
+  border: 1px solid var.$linePink;
+  margin-bottom: 140px;
+
+  @include set.mediaQuery(tab) {
+    padding: 30px 20px;
+  }
+}
+
+.indexRecruit__contentTitle {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: clamp(2rem, 1.855rem + 0.73vw, 2.4rem);
+}
+
+.indexRecruit__contentAreaInner {
+  margin-bottom: 50px;
+}
+
+.indexRecruit__contentAreaFlex {
+  display: flex;
+  align-items: center;
+  padding: 30px 0 30px 10px;
+  border-bottom: 1px solid var.$line;
+
+  @include set.mediaQuery(tab) {
+    flex-direction: column;
+  }
+}
+
+.indexRecruit__contentLeft {
+  width: 20%;
+  font-weight: bold;
+
+  @include set.mediaQuery(tab) {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+.indexRecruit__contentRight {
+  width: 80%;
+
+  // line-height: 1.8;
+  @include set.mediaQuery(tab) {
+    width: 100%;
+  }
+}
+
+.indexRecruit__recruitBtn {
+  text-align: center;
+  line-height: 3;
+}
+
+.indexRecruit__qualificationList {}
+
+.indexRecruit__qualificationItem {}
+
+.indexRecruit__movieArea {
+  margin-bottom: 110px;
+}

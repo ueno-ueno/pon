@@ -1,0 +1,56 @@
+@use "../component/component";
+@use "../foundation/setting" as set;
+@use "../foundation/variables" as var;
+
+
+.indexService{
+  max-width: 1110px;
+  margin: 0 auto 110px;
+padding: 0 4%;
+}
+.indexService__list{
+
+}
+.indexService__item{
+display: flex; 
+gap: 56px;
+ @include set.mediaQuery(tab) {
+  flex-direction: column;
+gap: 20px;
+ }
+}
+
+.indexService__item:not(:last-child){
+  margin-bottom: 60px;
+   @include set.mediaQuery(tab) {
+    margin-bottom: 40px;
+   }
+}
+
+.indexService__imgAreaArea{
+width: 40%;
+ @include set.mediaQuery(tab) {
+  width: 100%;
+ }
+}
+
+.indexService__img{
+object-fit: cover;
+width: 100%;
+}
+
+.indexService__title{
+font-size: clamp(1.8rem, 1.582rem + 1.09vw, 2.4rem);
+margin-bottom: 20px;
+text-align: center;
+}
+
+.indexService__text{
+
+}
+.indexService__right{
+  width: 60%;
+   @include set.mediaQuery(tab) {
+    width: 100%;
+   }
+}

@@ -1,0 +1,187 @@
+@use "../foundation/setting" as set;
+@use "../foundation/variables" as var;
+
+
+
+.c-wrapper {
+  padding: 0 4%;
+}
+
+.c-wrapper--1110px {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+
+.c-mainEachPage {
+  margin-top: 250px;
+}
+
+.c-eachPage--titleArea {
+  background-image: url(/img/top/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 88px 0;
+}
+
+// ボタン
+.c-btn {
+  display: inline-block;
+  width: 220px;
+  height: 56px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  line-height: 56px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.c-btn--contactArea {
+  @include set.mediaQuery(tab) {
+    text-align: left;
+  }
+}
+
+.c-btn--contact {
+  border: 1px solid var.$white;
+  color: var.$white;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var.$white;
+    border-radius: 50%;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+
+.c-btn--primary {
+  background: var.$backgroundColorButton;
+  color: var.$white;
+  position: relative;
+
+  &::after {
+    content: "▸";
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: var.$white;
+  }
+}
+
+.c-btn--center {
+  text-align: center;
+}
+
+// セクションタイトル
+.c-sectionTitle {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.c-en {
+  font-size: clamp(3rem, 2.782rem + 1.09vw, 3.6rem);
+  font-weight: 800;
+  color: var.$primaryColorPurple;
+  text-transform: uppercase;
+}
+
+.c-en--white,
+.c-ja--white {
+  color: var.$white;
+}
+
+.c-ja {
+  display: block;
+}
+
+.c-section--caption {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.c-section--captionBr {
+  display: none;
+
+  @include set.mediaQuery(tab) {
+    display: block;
+  }
+}
+
+// パンくずリスト
+.c-bread {
+  width: 100%;
+  height: 40px;
+  background-color: var.$backgroundColorGray;
+  margin-bottom: 70px;
+}
+
+// recuruitページのパンくずリストのクラス
+.c-bread--bg {
+  background-color: var.$backgroundColorGray;
+  margin-bottom: 0;
+}
+
+
+.c-breadList {
+  display: flex;
+  line-height: 40px;
+}
+
+.c-breadItem {}
+
+.c-breadItem:not(:last-child) {
+  margin-right: 8px;
+}
+
+// トップへ戻るボタン
+.c-toTop {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 100;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    transform: rotate(45deg);
+    margin-top: 4px;
+  }
+}
