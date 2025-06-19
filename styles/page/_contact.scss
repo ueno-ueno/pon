@@ -86,7 +86,7 @@
 
 .indexContact__input:focus {
   outline: none;
-  border-color: $indexContactGray;
+  border-color: var.$indexContactGray;
 }
 
 input[list].indexContact__input {
@@ -112,7 +112,7 @@ input[list].indexContact__input {
 
 .indexContact__textarea:focus {
   outline: none;
-  border-color: $indexContactGray;
+  border-color: var.$indexContactGray;
 }
 
 .indexContact__dropdown {

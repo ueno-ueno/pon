@@ -145,7 +145,6 @@
   line-height: 40px;
 }
 
-.c-breadItem {}
 
 .c-breadItem:not(:last-child) {
   margin-right: 8px;
@@ -157,6 +156,7 @@
   right: 45px;
   bottom: 45px;
   z-index: 100;
+  display: none;
 
   &__button {
     display: flex;
@@ -184,4 +184,8 @@
     transform: rotate(45deg);
     margin-top: 4px;
   }
+}
+
+.c-toTop.is-visible{
+display: block;
 }
