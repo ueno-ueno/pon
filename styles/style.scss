@@ -516,6 +516,7 @@ body.is-fixed {
     justify-content: center;
     padding-right: 0;
     padding-bottom: 65px;
+    padding-top: 100px;
   }
 }
 
@@ -530,7 +531,7 @@ body.is-fixed {
 
 
 .company {
-  text-align: center;
+  text-align: center; 
 }
 
 .company__wrapper {
@@ -544,6 +545,7 @@ body.is-fixed {
 
   @include set.mediaQuery(tab) {
     background-image: url(../img/company/company-sp.jpg);
+    padding: 60px 0;
   }
 }
 

@@ -167,6 +167,11 @@
   transform: rotate(45deg);
   margin-top: 4px;
 }
+@media screen and (max-width: 900px) {
+  .c-toTop {
+    right: 20px;
+  }
+}
 
 .c-toTop.is-visible {
   display: block;
@@ -644,7 +649,7 @@ input[list].indexContact__input {
   margin-bottom: 70px;
   position: relative;
   width: 100%;
-  height: 840px;
+  height: auto;
   overflow: hidden;
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
           clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
@@ -755,11 +760,11 @@ input[list].indexContact__input {
   }
 }
 
-.indexService__imgAreaArea {
+.indexService__imgArea {
   width: 40%;
 }
 @media screen and (max-width: 900px) {
-  .indexService__imgAreaArea {
+  .indexService__imgArea {
     width: 100%;
   }
 }
@@ -1431,6 +1436,7 @@ body.is-fixed {
     justify-content: center;
     padding-right: 0;
     padding-bottom: 65px;
+    padding-top: 100px;
   }
 }
 
@@ -1460,6 +1466,7 @@ body.is-fixed {
 @media screen and (max-width: 900px) {
   .company__wrapper {
     background-image: url(../img/company/company-sp.jpg);
+    padding: 60px 0;
   }
 }
 
