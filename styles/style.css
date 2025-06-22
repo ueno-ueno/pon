@@ -196,7 +196,13 @@
   }
 }
 
-.indexCompanyHero__title {
+.indexRecruit__title {
+  font-size: clamp(2.4rem, 1.964rem + 2.18vw, 3.6rem);
+  color: #391E88;
+  margin-bottom: 16px;
+}
+
+.indexCompanyHero__subTitle {
   font-size: clamp(3.2rem, 2.909rem + 1.45vw, 4rem);
   margin-bottom: 40px;
   -webkit-text-decoration: underline #F5F534;
